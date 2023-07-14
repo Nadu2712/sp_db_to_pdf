@@ -23,7 +23,6 @@ public class SpDbToPdfApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         if (repository.count() == 0) {
-            // save a list of Employees
             repository.saveAll(Arrays.asList(
                     new Employee("Donald", "Grant", "Accounts", "650.507.9833"),
                     new Employee("Douglas", "Nolan", "Admin", "650.507.9844"),
